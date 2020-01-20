@@ -1,3 +1,8 @@
+
+body{
+  margin:0;
+}
+
 .record-list img{
   width:150px;
   height:150px;
@@ -11,7 +16,7 @@
   float:left;
   width:20%;
   height:1000px;
-  background-color:black;
+  background-color:rgba(225,245,230,0.5);
   text-align:center;
   cursor:auto;
 }
@@ -19,4 +24,18 @@
 .select-btn button{
   margin:10px 20% 10px 20%;
   cursor:pointer;
+}
+
+.main-title{
+  background-image:url(images/cg_0001.png);
+  background-size:cover;
+  text-align:center;
+  height:500px;
+}
+
+.main-title h1{
+  margin-top:150px;
+  display:inline-block;
+  padding:30px 80px;
+  background-color:rgba(255,255,255,0.8);
 }
