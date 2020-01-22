@@ -1,1 +1,1 @@
-$('.title').slideDown(1250);
+$('.title').slideUp(1250);
