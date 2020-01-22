@@ -1,3 +1,5 @@
+
+
 // 配列
 var allImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png'];
 var recordImages = ['【マダーレッド】サーニャ.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png'];
@@ -53,6 +55,7 @@ third();
 document.getElementById('click').onclick=function(){
   document.getElementById("record-images").classList.toggle("remove");
   document.getElementById("all-images").classList.add("remove");
+  document.getElementById("click").classList.toggle("btn-color");
 }
 
 document.getElementById('second').onclick=function(){
@@ -70,5 +73,4 @@ document.getElementById('all').onclick=function(){
   document.getElementById("record-images").classList.add("remove");
   document.getElementById("select-images").classList.add("remove");
   document.getElementById("third-images").classList.add("remove");
-
 }
