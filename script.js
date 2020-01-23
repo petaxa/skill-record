@@ -1,13 +1,4 @@
-$(function(){
-　//ローディングエリアを取得
-　var loading = $("#loading");
-　//ローディングエリアを隠す処理
-　var isHidden = function(){
-　　loading.fadeOut(1000); //1000ミリ秒かけてフェードアウト
-　};
-　//1000ミリ秒後にloadingFunc開始
-　setTimeout(isHidden,1000);
-});
+
 
 // 配列
 var allImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png'];
