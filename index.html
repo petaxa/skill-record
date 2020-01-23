@@ -6,9 +6,26 @@
   <link rel="stylesheet" href="stylesheet.css">
   <title>saoif</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- <script>
+// 読み込んだらフェードアウト
+
+// 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
+function stopload(){
+    $('.loading').delay(3000).fadeOut(700);
+}
+setTimeout('stopload()',10000);
+</script> -->
+
 
 </head>
 <body>
+  <!-- <div class="loading">
+	<div class="animation" align="center"><img src="images/a.png" width="90%"></div>
+</div> -->
+  <div class="loading">
+    <p class="loading-txt">loading</p>
+    <div class="animation"></div>
+  </div>
   <div class='main-title'>
     <h1 class="title" "remove">すきるれこぉど</h1>
   </div>
