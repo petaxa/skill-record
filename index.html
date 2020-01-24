@@ -6,49 +6,65 @@
   <link rel="stylesheet" href="stylesheet.css">
   <title>saoif</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script>
-// 読み込んだらフェードアウト
-
-// 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
-function stopload(){
-    $('.loading').delay(3000).fadeOut(700);
-}
-setTimeout('stopload()',10000);
-</script> -->
-
-
 </head>
 <body>
-  <!-- <div class="loading">
-	<div class="animation" align="center"><img src="images/a.png" width="90%"></div>
-</div> -->
+<!-- loading関係 -->
   <div class="loading">
     <p class="loading-txt">loading</p>
     <div class="animation"></div>
   </div>
+  <div class="open">
+    <div class='open-img'></div>
+    <div class='open-img2'></div>
+  </div>
+
   <div class='main-title'>
     <h1 class="title" "remove">すきるれこぉど</h1>
   </div>
+
   <div class='select-btn'>
-    <!-- <button id='click'>クリック!!!!</button> -->
-    <image src='images/sword.png' class='sword' id=click></image>
-    <button id="second">２つ目!!!!</button>
-    <button id='third'>3つ目!!!!</button>
-    <button id='all'>全部表示!!!</button>
+    <div class="weapon-btn">
+      <image src='images/sword.png' class='weapon' id='sword'></image>
+      <image src='images/rapier.png' class='weapon' id='rapier'></image>
+      <image src='images/club.png' class='weapon' id='club'></image>
+      <image src='images/dagger.png' class='weapon' id='dagger'></image>
+      <image src='images/axe.png' class='weapon' id='axe'></image>
+      <image src='images/spear.png' class='weapon' id='spear'></image>
+      <image src='images/bow.png' class='weapon' id='bow'></image>
+      <image src='images/shield.png' class='weapon' id='shield'></image>
+      <button id='all'>全部表示!!!</button>
+    </div>
   </div>
+
   <div class='record-list'>
     <div id="all-images">
       <!-- innerHTML -->
     </div>
-    <div id="record-images" class="remove">
+    <div id="sword-images" class="remove">
       <!-- innerHTML -->
     </div>
-    <div id="select-images" class="remove">
+    <div id="rapier-images" class="remove">
       <!-- innerHTML -->
     </div>
-    <div id='third-images' class="remove">
+    <div id='club-images' class="remove">
       <!-- innerHTML -->
     </div>
+    <div id='dagger-images' class="remove">
+      <!-- innerHTML -->
+    </div>
+    <div id='axe-images' class="remove">
+      <!-- innerHTML -->
+    </div>
+    <div id='spear-images' class="remove">
+      <!-- innerHTML -->
+    </div>
+    <div id='bow-images' class="remove">
+      <!-- innerHTML -->
+    </div>
+    <div id='shield-images' class="remove">
+      <!-- innerHTML -->
+    </div>
+
   </div>
   <script src="jquery.js"></script>
   <script src="script.js"></script>
