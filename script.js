@@ -92,7 +92,6 @@ function shield(){
   }
 }
 
-
 sword();
 rapier();
 club();
