@@ -1,9 +1,10 @@
 body{
   margin:0;
-  background-color: #696969;
+  background-color: white;
 }
-
+/* ********************************************************************************* */
 /* title */
+/* ********************************************************************************* */
 .main-title{
   background-image:url(images/cg_0001.png);
   background-size:cover;
@@ -12,7 +13,7 @@ body{
 }
 
 .main-title h1{
-  margin-top:150px;
+  margin-top:40vh;
   display:inline-block;
   padding:30px 80px;
   background-color:rgba(255,255,255,0.8);
@@ -22,7 +23,9 @@ body{
   width:100px;
 }
 
+/* ********************************************************************************* */
 /* weapon button */
+/* ********************************************************************************* */
   /* button style */
   .select-btn{
     float:left;
@@ -41,7 +44,6 @@ body{
     height:1000px;
     text-align:center;
     cursor:auto;
-    margin-left:15vh;
   }
 
   .weapon{
@@ -78,7 +80,9 @@ body{
     }
   }
 
+/* ********************************************************************************* */
 /* loading animation */
+/* ********************************************************************************* */
 .loading{
   position:fixed;
   width:100vw;
@@ -112,8 +116,11 @@ body{
     width:800px;
   }
 }
+
+/* ********************************************************************************* */
 /* opening animation */
-.open{
+/* ********************************************************************************* */
+/* .open{
   position:fixed;
   width:100vw;
   height:100vh;
@@ -124,7 +131,7 @@ body{
 .open-img,.open-img3,.open-img5,.open-img7,.open-img9{
   width:0vw;
   height:10vh;
-  background-color:plum;
+  background-color:lightblue;
   animation:opening 1500ms linear forwards;
   animation-delay:1600ms;
 }
@@ -132,7 +139,7 @@ body{
 .open-img2,.open-img4,.open-img6,.open-img8,.open-img10{
   width:100vw;
   height:10vh;
-  background-color:skyblue;
+  background-color:sandybrown;
   animation:opening2 1500ms linear forwards;
   animation-delay:1600ms;
 }
@@ -201,9 +208,10 @@ body{
   100%{
     transform:rotate(180);
   }
-}
+} */
 
-@keyframes opening2{
+/* keyframes */
+/* @keyframes opening2{
   0%{
     left:100vw;
   }
@@ -228,8 +236,11 @@ body{
   100%{
     background-color: rgba(0,0,0,0);
   }
-}
+} */
+
+/* ********************************************************************************* */
 /* linkerAnimation */
+/* ********************************************************************************* */
 /* .loading{
   position: fixed;
   width: 100vw;
@@ -260,3 +271,95 @@ body{
         transform: translate(-50%, -50%);
   }
 } */
+/* ********************************************************************************* */
+
+/* ********************************************************************************* */
+
+
+/* ********************************************************************************* */
+/* スライドショー */
+/* ********************************************************************************* */
+.kaiten{
+  height:100vh;
+  width:100vw;
+  background-color:#000;
+  position:fixed;
+}
+
+#slider {
+  position: absolute;
+  top: 15vh; left: 35vh;
+  width: 900px; height: 500px;
+}
+
+.img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 0%; height: 100%;
+  overflow: hidden;
+}
+.img:after {
+  content: ""; display: block;
+  width: 900px; height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+.img:nth-child(1):after { background-image: url(images/cg_0009.png); }
+.img:nth-child(2):after { background-image: url(images/cg_0019.png); }
+.img:nth-child(3):after { background-image: url(images/cg_0045.png); }
+.img:nth-child(4):after { background-image: url(images/cg_0077.png); }
+
+.paint {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.paint div {
+  width: 100%; height: 25%;
+  background-color: #000;
+  transform: translateX(-100%);
+  /* opacity:0; */
+}
+
+
+
+ /* animation */
+
+.img:nth-child(1) {
+  animation: show-image 0.7s ease 2000ms forwards;
+ }
+.img:nth-child(2) {
+  animation: show-image 0.7s ease 2200ms forwards;
+ }
+.img:nth-child(3) {
+  animation: show-image 0.7s ease 2400ms forwards;
+ }
+.img:nth-child(4) {
+  animation: show-image 0.7s ease 2600ms forwards;
+ }
+
+.paint div:nth-child(1) { animation: slide-right 0.45s ease 3100ms forwards; }
+.paint div:nth-child(2) { animation: slide-right 0.45s ease 3200ms forwards; }
+.paint div:nth-child(3) { animation: slide-right 0.45s ease 3300ms forwards; }
+.paint div:nth-child(4) { animation: slide-right 0.45s ease 3400ms forwards; }
+
+
+ /* keyframes */
+@keyframes show-image {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+@keyframes slide-right {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0%); }
+}
+
+
+.txt{
+  font-size:80px;
+  text-align:center;
+  margin-top:45vh;
+  color:white;
+  display:none;
+  font-family:Pirata one;
+}
