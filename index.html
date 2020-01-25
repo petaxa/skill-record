@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" initial-scale="1.0">
   <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css">
   <title>saoif</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- loading関係 -->
-  <div class="loading">
+  <!-- <div class="loading">
     <p class="loading-txt">loading</p>
     <div class="animation"></div>
-  </div>
+  </div> -->
 <!-- 横から -->
   <!-- <div class="open">
     <div class='open-img'></div>
@@ -46,12 +47,29 @@
     </main>
   </div>
 
+  <div class="haikei">
+    <div class="text">loading. . .</div>
+    <div class="intersecting-circles-spinner">
+      <div class="spinnerBlock">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class='main-title'>
-    <h1 class="title" "remove">すきるれこぉど</h1>
+    <h1 class="title">SAOIF-SKILLRECORD-LIST</h1>
   </div>
 
   <div class='select-btn'>
-    <div class="weapon-btn">
+    <div class="weapon-btn" data-aos="fade-up" data-aos-anchor=".record-list" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
       <image src='images/sword.png' class='weapon' id='sword'></image>
       <image src='images/rapier.png' class='weapon' id='rapier'></image>
       <image src='images/club.png' class='weapon' id='club'></image>
@@ -60,7 +78,7 @@
       <image src='images/spear.png' class='weapon' id='spear'></image>
       <image src='images/bow.png' class='weapon' id='bow'></image>
       <image src='images/shield.png' class='weapon' id='shield'></image>
-      <button id='all'>全部表示!!!</button>
+      <image src='images/ALL.png' class='weapon' id='all'></image>
     </div>
   </div>
 
@@ -96,5 +114,9 @@
   </div>
   <script src="jquery.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

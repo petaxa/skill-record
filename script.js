@@ -1,7 +1,7 @@
 
 
 // 配列
-var allImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png'];
+var allImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png',];
 var swordImages = ['【マダーレッド】サーニャ.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png'];
 var rapierImages = ['a.png','image.png'];
 var clubImages = ['keyboard.png','laptop.png'];
