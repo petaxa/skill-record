@@ -193,7 +193,12 @@ document.getElementById('all').onclick=function(){
 
 document.getElementById("time").onclick=function(){
   document.getElementById('time-images').classList.toggle('remove');
-  document.getElementById("all").classList.toggle("btn-color");
+  var timeHasRemove = $("#time-images").hasClass('remove');
+  if(timeHasRemove){
+    document.getElementById("all").classList.remove("btn-color");
+  }else{
+    document.getElementById("all").classList.add("btn-color");
+  }
   // 属性別表示を解除
   document.getElementById("type-images").classList.add("remove");
   document.getElementById("sword-images").classList.add("remove");
@@ -217,7 +222,12 @@ document.getElementById("time").onclick=function(){
 
 document.getElementById("type").onclick=function(){
   document.getElementById('type-images').classList.toggle('remove');
-  document.getElementById("all").classList.add("btn-color");
+  var typeHasRemove = $("#type-images").hasClass('remove');
+  if(typeHasRemove){
+    document.getElementById("all").classList.remove("btn-color");
+  }else{
+    document.getElementById("all").classList.add("btn-color");
+  }
   // 時系列・属性別表示を解除
   document.getElementById("time-images").classList.add("remove");
   document.getElementById("sword-images").classList.add("remove");
