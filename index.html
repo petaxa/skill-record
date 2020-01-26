@@ -10,12 +10,55 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
+<!-- ************************************************************************************************ -->
+<!-- opening slide show -->
+<!-- ************************************************************************************************ -->
+    <div class="kaiten">
+      <div class="txt">SAOIF-SKILLRECORD-LIST</div>
+      <main id="slider">
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+          <div class="img"></div>
+
+          <div class="paint">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+      </main>
+    </div>
+
+<!-- ************************************************************************************************ -->
+<!-- loading animation  -->
+<!-- ************************************************************************************************ -->
+    <div class="haikei">
+      <div class="text">loading. . .</div>
+      <div class="intersecting-circles-spinner">
+        <div class="spinnerBlock">
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+          <span class="circle"></span>
+        </div>
+      </div>
+    </div>
+
+
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
+<!-- ボ ツ 案 -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
 <!-- loading関係 -->
   <!-- <div class="loading">
     <p class="loading-txt">loading</p>
     <div class="animation"></div>
   </div> -->
-<!-- 横から -->
+
+<!-- animation：横から -->
   <!-- <div class="open">
     <div class='open-img'></div>
     <div class='open-img2'></div>
@@ -28,46 +71,20 @@
     <div class='open-img9'></div>
     <div class='open-img10'></div>
   </div> -->
-
-<!-- スライドショー -->
-  <div class="kaiten">
-    <div class="txt">SAOIF-SKILLRECORD-LIST</div>
-    <main id="slider">
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-        <div class="img"></div>
-
-        <div class="paint">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-    </main>
-  </div>
-
-  <div class="haikei">
-    <div class="text">loading. . .</div>
-    <div class="intersecting-circles-spinner">
-      <div class="spinnerBlock">
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-        <span class="circle"></span>
-      </div>
-    </div>
-  </div>
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
+<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   -->
 
 
-
+<!-- ************************************************************************************************ -->
+<!-- title -->
+<!-- ************************************************************************************************ -->
   <div class='main-title'>
     <h1 class="title">SAOIF-SKILLRECORD-LIST</h1>
   </div>
-
+  
+<!-- ************************************************************************************************ -->
+<!-- select order -->
+<!-- ************************************************************************************************ -->
   <div class='select-btn'>
     <div class="weapon-btn" data-aos="fade-up" data-aos-anchor=".record-list" data-aos-offset="100" data-aos-easing="ease-in-sine" data-aos-duration="800">
       <image src='images/sword.png' class='weapon' id='sword'></image>
@@ -78,12 +95,15 @@
       <image src='images/spear.png' class='weapon' id='spear'></image>
       <image src='images/bow.png' class='weapon' id='bow'></image>
       <image src='images/shield.png' class='weapon' id='shield'></image>
-      <image src='images/ALL.png' class='weapon' id='all'></image>
+      <image src='images/ALL.png' class='weapon btn-color' id='all'></image>
     </div>
   </div>
 
+<!-- ************************************************************************************************ -->
+<!-- skill record -->
+<!-- ************************************************************************************************ -->
   <div class='record-list'>
-    <div id="all-images">
+    <div id="time-images">
       <!-- innerHTML -->
     </div>
     <div id="sword-images" class="remove">
@@ -112,6 +132,17 @@
     </div>
 
   </div>
+
+  <!-- ************************************************************************************************ -->
+  <!-- allのモーダル -->
+  <!-- ************************************************************************************************ -->
+  <div id="all-modal" class="remove">
+    <p id="time">時系列</p>
+    <p id="type">装備タイプ</p>
+  </div>
+
+
+<!-- script -->
   <script src="jquery.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>

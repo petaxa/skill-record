@@ -1,7 +1,7 @@
 
 
 // 配列
-var allImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png',];
+var timeImages = ['【ビーターラビット】キリト.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png','a.png','image.png','keyboard.png','laptop.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png','【マダーレッド】サーニャ.png','handpointer.png',];
 var swordImages = ['【マダーレッド】サーニャ.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png'];
 var rapierImages = ['a.png','image.png'];
 var clubImages = ['keyboard.png','laptop.png'];
@@ -12,15 +12,16 @@ var bowImages = ['laptop.png','hourglass.png'];
 var shieldImages = ['lock.png','a.png'];
 
 // スキレコ全部を表示
-function all(){
-  var whole = ' ';
-  for(let i=0;i<allImages.length;i++){
-    var allImage = allImages[i];
-    whole += `<img src="images/${allImage}"/>`;
-    document.getElementById('all-images').innerHTML=whole;
+function time(){
+  var time = ' ';
+  for(let i=0;i<timeImages.length;i++){
+    var timeImage = timeImages[i];
+    let name = i;
+    time += `<img src="images/${timeImage}" id='time${name}'/>`;
+    document.getElementById('time-images').innerHTML=time;
   }
 }
-all();
+time();
 
 
 // 属性別表示
@@ -106,54 +107,80 @@ shield();
 // ボタンクリック
 document.getElementById('sword').onclick=function(){
   document.getElementById("sword-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("sword").classList.toggle("btn-color");
 }
 
 document.getElementById('rapier').onclick=function(){
   document.getElementById("rapier-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("rapier").classList.toggle("btn-color");
 }
 
 document.getElementById('club').onclick=function(){
   document.getElementById("club-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("club").classList.toggle("btn-color");
 }
 
 document.getElementById('dagger').onclick=function(){
   document.getElementById("dagger-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("dagger").classList.toggle("btn-color");
 }
 
 document.getElementById('axe').onclick=function(){
   document.getElementById("axe-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("axe").classList.toggle("btn-color");
 }
 
 document.getElementById('spear').onclick=function(){
   document.getElementById("spear-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("spear").classList.toggle("btn-color");
 }
 
 document.getElementById('bow').onclick=function(){
   document.getElementById("bow-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("bow").classList.toggle("btn-color");
 }
 
 document.getElementById('shield').onclick=function(){
   document.getElementById("shield-images").classList.toggle("remove");
-  document.getElementById("all-images").classList.add("remove");
+  document.getElementById("time-images").classList.add("remove");
+  document.getElementById("all").classList.remove("btn-color");
   document.getElementById("shield").classList.toggle("btn-color");
 }
 
+
+
+
 document.getElementById('all').onclick=function(){
-  document.getElementById('all-images').classList.remove('remove');
+  // モーダル表示
+    // クラス取得
+  var rom = $('#all-modal').hasClass('remove');
+    // if
+  if(rom){
+    $('#all-modal').fadeIn(1000);
+  }else{
+    $('#all-modal').fadeOut(1000);
+  }
+  document.getElementById("all-modal").classList.toggle("remove");
+}
+
+document.getElementById("time").onclick=function(){
+  document.getElementById('time-images').classList.toggle('remove');
+  document.getElementById("all").classList.toggle("btn-color");
+  // 属性別表示を解除
   document.getElementById("sword-images").classList.add("remove");
   document.getElementById("rapier-images").classList.add("remove");
   document.getElementById("dagger-images").classList.add("remove");
@@ -161,6 +188,8 @@ document.getElementById('all').onclick=function(){
   document.getElementById("spear-images").classList.add("remove");
   document.getElementById("bow-images").classList.add("remove");
   document.getElementById("shield-images").classList.add("remove");
+
+  // 属性ボタンのborderを通常に
   document.getElementById('sword').classList.remove("btn-color");
   document.getElementById("rapier").classList.remove("btn-color");
   document.getElementById("club").classList.remove("btn-color");
@@ -169,4 +198,8 @@ document.getElementById('all').onclick=function(){
   document.getElementById("spear").classList.remove("btn-color");
   document.getElementById("bow").classList.remove("btn-color");
   document.getElementById("shield").classList.remove("btn-color");
+}
+
+document.getElementById('time0').onclick=function(){
+  document.getElementById('more-time0').classList.toggle('remove');
 }

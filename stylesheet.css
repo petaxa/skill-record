@@ -25,10 +25,16 @@ body{
 /* ********************************************************************************* */
 .record-list{
   height:1000vh;
+  padding-top:20px;
+  padding-left:10px;
 }
 .record-list img{
   width:100px;
   height:100px;
+  margin-left:10px;
+  border:solid 2px black;
+  border-radius:10%;
+  margin-top:5px;
 }
 
 /* ********************************************************************************* */
@@ -61,6 +67,7 @@ body{
     border-radius: 50%;
     transition:all 500ms 0s ease;
     margin-left:3%;
+    cursor:pointer;
   }
 
   /* button animation */
@@ -96,7 +103,6 @@ body{
   top:0px;
   left:0px;
   background:#fff;
-  z-index:9999;
 }
 .animation{
   position:absolute;
@@ -464,3 +470,30 @@ body{
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
     }
+
+
+/* ********************************************************************************* */
+/* all modal */
+/* ********************************************************************************* */
+
+#all-modal{
+  width:130px;
+  height:250px;
+  /* background-color:rgb(36,19,54); */
+  background:silver;
+  position:absolute;
+  top:58%;
+  left:84vw;
+  border:solid 2px black;
+  border-radius:3%;
+  position:fixed;
+}
+
+#all-modal p{
+  text-align:center;
+  color:white;
+  cursor:pointer;
+}
+
+
+/* details */
