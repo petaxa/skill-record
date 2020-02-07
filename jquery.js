@@ -3,11 +3,13 @@
 // ************************************************************************************
 
 // load animation
-$('.loading').delay(1300).fadeOut(300);
-$('.haikei').delay(1300).fadeOut(300);
+
 
 // opening animation
-$('#slider').delay(3600).fadeOut(1);
-$('.txt').delay(3800).fadeIn(900);
-$('.txt').delay(4600).fadeOut(1500);
-$('.kaiten').delay(4500).fadeOut(1500);
+window.onload = function () {
+  $('.loading').delay(1300).fadeOut(300);
+  $('.haikei').delay(1300).fadeOut(300);
+  $('.txt').delay(2000).fadeIn(900);
+  $('.txt').delay(3600).fadeOut(1500);
+  $('.kaiten').delay(3500).fadeOut(1500);
+};
