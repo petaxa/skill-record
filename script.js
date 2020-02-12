@@ -65,6 +65,28 @@ var shieldImages = ['物静かな騎士　サチ'];
       bowBtn.classList.remove("btn-color");
       shieldBtn.classList.remove("btn-color");
    }
+  // buttonBorder add
+    function borderAdd(){
+      swordBtn.classList.add("btn-color");
+      rapierBtn.classList.add("btn-color");
+      clubBtn.classList.add("btn-color");
+      daggerBtn.classList.add("btn-color");
+      axeBtn.classList.add("btn-color");
+      spearBtn.classList.add("btn-color");
+      bowBtn.classList.add("btn-color");
+      shieldBtn.classList.add("btn-color");
+    }
+  // タイプ順
+    function type(){
+      swordPic.classList.remove("remove");
+      rapierPic.classList.remove("remove");
+      clubPic.classList.remove("remove");
+      daggerPic.classList.remove("remove");
+      axePic.classList.remove("remove");
+      spearPic.classList.remove("remove");
+      bowPic.classList.remove("remove");
+      shieldPic.classList.remove("remove");
+    }
 
 
 // スキルの枚数を表示
@@ -162,14 +184,14 @@ function shield(){
   }
   shieldPic.innerHTML=shield;
 }
-
-
-// タイプ順
-function type(){
-  // 表示にすればok
-  swordPic.classList.remove("remove");
-
-}
+sword();
+rapier();
+club();
+dagger();
+axe();
+spear();
+bow();
+shield();
 
 
 // ボタンクリック
@@ -286,5 +308,5 @@ document.getElementById("type").onclick=function(){
   document.getElementById("time-images").classList.add("remove");
 
   // 属性ボタンのborderを通常に
-  borderRemove();
+  borderAdd();
 }
