@@ -304,8 +304,11 @@ timeBtn.onclick=function(){
 
 document.getElementById("type").onclick=function(){
   type();
-  // 時系列・属性別表示を解除
+  // 時系列表示を解除
   document.getElementById("time-images").classList.add("remove");
+  
+  //allbtnのカラーオフ
+  allBtn.classList.remove("btn-color");
 
   // 属性ボタンのborderを通常に
   borderAdd();
