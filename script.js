@@ -19,22 +19,17 @@ var timeImages = ['鮮烈なる一撃　キリト','鮮烈の連突　アスナ'
 '夜空を駆ける剣士　キリト','看板メイド　アスナ','お掃除メイド　サーニャ','おてんばメイド　リズベット','お子様メイド　ユイ','幸福の笑み　アスナ','剣士の微睡　キリト','メロメロガール　コハル','美々しい踊り子　サチ','ピュアダンサー　シリカ','魅惑の舞姫　ユウキ','極めし一撃　ストレア','あなたへのささやき　ストレア','夜空と親愛　ロニエ','青薔薇と恋心　ティーゼ','愛情の届け　アスナ','輝きの美少女　アリス','男前なプリンス　キリト','最高にキュート　シノン','夢の花園　ユウキ','幸福への願い　リーファ',
 '雙翼刃の整合騎士　レンリ','随一の情報屋　アルゴ','ホークアイ　シノン','堅牢堅固　ヒースクリフ','突き進む英雄　キリト','唯一無二の閃光　アスナ','フレンドメイス　リズベット','勇戦の覚悟　サチ','強襲の一撃　リーファ','砕けぬ意志　ユイ','霜鱗鞭の整合騎士　エルドリエ','寡黙な女騎士　シェータ','鋼の拳　イスカーン','慈愛の瞳　アスナ','聖夜のプレゼント　キリト','愛の特注ケーキ　リズベット','幸せの伝道者　ユウキ','キミと過ごす聖夜　コハル','ついつい食べ過ぎ　リーファ','閃光の払い手　アスナ',
 '願いを込めた絵馬　リズベット','希望の光　キリト'];
-// var typeImages = ['a.png','keyboard.png','lock.png','a.png'];
-var swordImages = ['【マダーレッド】サーニャ.png','handpointer.png','hourglass.png','image.png','lock.png','laptop.png'];
-var rapierImages = ['a.png','image.png'];
-var clubImages = ['keyboard.png','laptop.png'];
-var daggerImages = ['image.png','【ビーターラビット】キリト.png'];
-var axeImages = ['a.png','keyboard.png'];
-var spearImages = ['handpointer.png','【マダーレッド】サーニャ.png'];
-var bowImages = ['laptop.png','hourglass.png'];
-var shieldImages = ['lock.png','a.png'];
+var swordImages = ['鮮烈なる一撃　キリト'];
+var rapierImages = ['心を込めた願い　シリカ'];
+var clubImages = ['いつもそばにいるよ　コハル'];
+var daggerImages = ['閃光の聖騎士　アスナ'];
+var axeImages = ['闇色の剣士　キリト'];
+var spearImages = ['希望の光　キリト'];
+var bowImages = ['銃士の哀憐　サチ'];
+var shieldImages = ['物静かな騎士　サチ'];
 
 
 // kiss
-  // weapon配列
-    var weaponList = ['swordBtn','rapier','club','dagger','axe','spear','bow','shield'];
-    var weaponList_length = weaponList.length;
-
   // skill-images ID
     var timePic = document.getElementById('time-images');
     var swordPic = document.getElementById('sword-images');
@@ -46,7 +41,7 @@ var shieldImages = ['lock.png','a.png'];
     var bowPic = document.getElementById('bow-images');
     var shieldPic = document.getElementById('shield-images');
 
-  // weapon-btn
+  // weapon-btn ID
     var swordBtn = document.getElementById('sword');
     var rapierBtn = document.getElementById('rapier');
     var clubBtn = document.getElementById('club');
@@ -59,7 +54,17 @@ var shieldImages = ['lock.png','a.png'];
     var timeBtn = document.getElementById('time');
     var typeBtn = document.getElementById('type');
 
-
+  // buttonBorder remove
+    function borderRemove(){
+      swordBtn.classList.remove("btn-color");
+      rapierBtn.classList.remove("btn-color");
+      clubBtn.classList.remove("btn-color");
+      daggerBtn.classList.remove("btn-color");
+      axeBtn.classList.remove("btn-color");
+      spearBtn.classList.remove("btn-color");
+      bowBtn.classList.remove("btn-color");
+      shieldBtn.classList.remove("btn-color");
+   }
 
 
 // スキルの枚数を表示
@@ -168,66 +173,74 @@ function type(){
 
 
 // ボタンクリック
-document.getElementById('sword').onclick=function(){
+swordBtn.onclick=function(){
   swordPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   swordBtn.classList.toggle("btn-color");
+  sword();
 }
 
-document.getElementById('rapier').onclick=function(){
+rapierBtn.onclick=function(){
   rapierPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   rapierBtn.classList.toggle("btn-color");
+  rapier();
 }
 
-document.getElementById('club').onclick=function(){
+clubBtn.onclick=function(){
   clubPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   clubBtn.classList.toggle("btn-color");
+  club();
 }
 
-document.getElementById('dagger').onclick=function(){
+daggerBtn.onclick=function(){
   daggerPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   daggerBtn.classList.toggle("btn-color");
+  dagger();
 }
 
-document.getElementById('axe').onclick=function(){
+axeBtn.onclick=function(){
   axePic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   axeBtn.classList.toggle("btn-color");
+  axe();
 }
 
-document.getElementById('spear').onclick=function(){
+spearBtn.onclick=function(){
   spearPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   spearBtn.classList.toggle("btn-color");
+  spear();
 }
 
-document.getElementById('bow').onclick=function(){
+bowBtn.onclick=function(){
   bowPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   bowBtn.classList.toggle("btn-color");
+  bow();
 }
 
-document.getElementById('shield').onclick=function(){
+shieldBtn.onclick=function(){
   shieldPic.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   shieldBtn.classList.toggle("btn-color");
+  shield();
 }
 
 
 
 
-document.getElementById('all').onclick=function(){
+allBtn.onclick=function(){
   // モーダル表示
     // クラス取得
   var rom = $('#all-modal').hasClass('remove');
@@ -240,17 +253,11 @@ document.getElementById('all').onclick=function(){
   document.getElementById("all-modal").classList.toggle("remove");
 }
 
-function borderColor(){
-  var  weaponName
-  for(let i=0;i<weaponList_length;i++){
-    weaponList[i].classList.toggle('btn-color');
-  }
-}
 
 
 
 
-document.getElementById("time").onclick=function(){
+timeBtn.onclick=function(){
   timePic.classList.toggle('remove');
   // allBtnの色制御
   var timeHasRemove = $("#time-images").hasClass('remove');
@@ -262,6 +269,7 @@ document.getElementById("time").onclick=function(){
   // 属性別表示を解除
   swordPic.classList.add("remove");
   rapierPic.classList.add("remove");
+  clubPic.classList.add("remove");
   daggerPic.classList.add("remove");
   axePic.classList.add("remove");
   spearPic.classList.add("remove");
@@ -269,17 +277,7 @@ document.getElementById("time").onclick=function(){
   shieldPic.classList.add("remove");
 
   // 属性ボタンのborderを通常に
-
-  borderColor();
-
-  // swordBtn.classList.remove("btn-color");
-  // rapierBtn.classList.remove("btn-color");
-  // clubBtn.classList.remove("btn-color");
-  // daggerBtn.classList.remove("btn-color");
-  // axeBtn.classList.remove("btn-color");
-  // spearBtn.classList.remove("btn-color");
-  // bowBtn.classList.remove("btn-color");
-  // shieldBtn.classList.remove("btn-color");
+  borderRemove();
 }
 
 document.getElementById("type").onclick=function(){
@@ -288,12 +286,5 @@ document.getElementById("type").onclick=function(){
   document.getElementById("time-images").classList.add("remove");
 
   // 属性ボタンのborderを通常に
-  swordBtn.classList.remove("btn-color");
-  rapierBtn.classList.remove("btn-color");
-  clubBtn.classList.remove("btn-color");
-  daggerBtn.classList.remove("btn-color");
-  axeBtn.classList.remove("btn-color");
-  spearBtn.classList.remove("btn-color");
-  bowBtn.classList.remove("btn-color");
-  shieldBtn.classList.remove("btn-color");
+  borderRemove();
 }

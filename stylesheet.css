@@ -35,6 +35,8 @@ body{
   border:solid 2px black;
   border-radius:10%;
   margin-top:5px;
+  background-image: url(images/cglist/title_bg3.png);
+  background-size: cover;
 }
 
 /* ********************************************************************************* */
