@@ -7,7 +7,7 @@ var timeImages = ['鮮烈なる一撃　キリト','鮮烈の連突　アスナ'
 '幸せの花売り　シリカ','イサマシビーター　キリト','風薫る花娘　アスナ','黒百合の閃光　アスナ','グレースフル　サチ','イタズラな瞳　リーファ','レディスタイル　リズベット','快活フロイライン　ユウキ','クラッシィ　アルゴ','猛進メイサー　リズベット','万里一空　ユウキ','秘密のダガー　シリカ','シャイニー・ブライド　アスナ','ハピネス・ブライド　ユウキ','ファーストバイト　リーファ','ブーケトス　コハル','休日の一コマ　サチ','完全勝利　ユウキ','一閃の刺突　アスナ',
 'ブラック・ナイト　キリト','物静かな騎士　サチ','フラッパー・スペア　リズベット','チャーミング・ナイト　シリカ','魅惑のサマーナイト　アスナ','サマーガール　コハル','ウェルカム・サマー　ユウキ','星降るサマータイム　リズベット','サマーショット　リーファ','サマードリンク　シリカ','ピュア・シスター　ストレア','ソードブレイカー　フィリア','フラッシュ・スラスト　アスナ','外柔内剛　サチ','悠然たる弓使い　シノン','クールビューティ　シノン','サンセットビーチ　シノン',
 '黄昏時の渚　サチ','きらめくサンシャイン　ユウキ','キラキラシーサイド　アスナ','シャイな海辺　コハル','真夏のサンライト　リーファ','イノセント・スマイル　アスナ','夜空に咲く花　ユウキ','スナイパー・アイ　シノン','思い出の夏　コハル','孤高の弓　シノン','陽だまりの丘　アスナ','異国の森　ユウキ','ワンダーハット　シノン','スマイルキャット　リズベット','トラブルラビット　シリカ','ティー・パーティ　リーファ','忠義の盾　キズメル','ファストナイト　アルゴ','穿つ銃弾　キリト',
-'電光石火　アスナ','怒りの行軍　リーファ','射抜く眼差し　シノン','銃士の哀憐　サチ','いたずらな笑み　アルゴ','花の舞う庭　アスナ','憩いの朝　アスナ','ベストパートナー　シリカ','秘めた思い　シリカ','勝利者の余裕　キリト','束の間の休息　キリト','異界の剣士　ユージオ','異界の騎士　　アリス','ハッピー・ハロウィン　アスナ','小悪魔スタイル　ユウキ','キュートヴァンパイア　シノン','ハロウィンキャット　リーファ','トリック・ウィッチ　サチ','コフィン・ブレイク　リズベット','紅の巫女　アスナ',
+'電光石火　アスナ','怒りの行軍　リーファ','射抜く眼差し　シノン','銃士の哀憐　サチ','いたずらな笑み　アルゴ','花の舞う庭　アスナ','憩いの朝　アスナ','ベストパートナー　シリカ','秘めた思い　シリカ','勝利者の余裕　キリト','束の間の休息　キリト','異界の剣士　ユージオ','異界の騎士　アリス','ハッピー・ハロウィン　アスナ','小悪魔スタイル　ユウキ','キュートヴァンパイア　シノン','ハロウィンキャット　リーファ','トリック・ウィッチ　サチ','コフィン・ブレイク　リズベット','紅の巫女　アスナ',
 '紅葉の舞　ユウキ','紅葉の弓巫女　シノン','巫女の日常　サチ','巫女の務め　シリカ','和の華菓　リーファ','無邪気の心　ストレア','天真爛漫　ストレア','ラブリーパステル　アスナ','ふわふわスマイル　ユウキ','ひらひらパラソル　サチ','ドーリードレス　シリカ','パステルレース　リズベット','恥じらいフリル　シノン','青薔薇の剣士　ユージオ','金木犀の騎士　アリス','光の剣撃　アスナ','一つの願い　サチ','弾ける光粒　リズベット','トップスピーダー　リーファ','一騎当千　ユウキ','ファーストシュート　シノン',
 '一番の思い出　シリカ','ホワイトノエル　アスナ','サイレントナイト　リーファ','プリティーサンタ　シリカ','ホーリープレゼント　シノン','ホワイトクリスマス　アリス','蒼き聖夜　ユージオ','冬空の風　ユウキ','寒空の華　サチ','大願成就　シノン','煌めく迎春　アルゴ','雪空の道　アリス','思いやりの心　ユージオ','慈愛の光　アスナ','純白な祈り　ユウキ','舞い降りる祝福　リズベット','エンジェル・エール　シリカ','神聖な微笑み　アリス','ハピネス・エンジェル　リーファ','在りし日の日常　キリト',
 '天職の務め　ユージオ','お昼の日課　アリス','ビター・ブラック　キリト','淡い恋心　サチ','心のカタチ　シノン','恥じらいスウィート　シリカ','熱烈アタック　アリス','真っ直ぐな心　ユージオ','紺ノ閃光　アスナ','白キ絶剣　ユウキ','赤キ名射手　シノン','蒼キ妖精　リーファ','若草ノ竜使い　シリカ','翠緑ノ月　サチ','パラレル・ミュージック　ユナ','癒しの唄　ユナ','優しき想い　コハル','思案のパートナー　コハル','歴戦の剣技　キリト','怒涛の猛攻　アスナ','猛烈な豪砲　エギル','痛烈な追撃　リズベット',
@@ -30,6 +30,15 @@ var shieldImages = ['物静かな騎士　サチ'];
 
 
 // kiss
+  //weaopn-records ID
+    var swordRecord = document.getElementById('sword-records');
+    var rapierRecord = document.getElementById('rapier-records');
+    var clubRecord = document.getElementById('club-records');
+    var daggerRecord = document.getElementById('dagger-records');
+    var axeRecord = document.getElementById('axe-records');
+    var spearRecord = document.getElementById('spear-records');
+    var bowRecord = document.getElementById('bow-records');
+    var shieldRecord = document.getElementById('shield-records');
   // skill-images ID
     var timePic = document.getElementById('time-images');
     var swordPic = document.getElementById('sword-images');
@@ -81,14 +90,14 @@ var shieldImages = ['物静かな騎士　サチ'];
     }
   // タイプ順
     function type(){
-      swordPic.classList.remove("remove");
-      rapierPic.classList.remove("remove");
-      clubPic.classList.remove("remove");
-      daggerPic.classList.remove("remove");
-      axePic.classList.remove("remove");
-      spearPic.classList.remove("remove");
-      bowPic.classList.remove("remove");
-      shieldPic.classList.remove("remove");
+      swordRecord.classList.remove("remove");
+      rapierRecord.classList.remove("remove");
+      clubRecord.classList.remove("remove");
+      daggerRecord.classList.remove("remove");
+      axeRecord.classList.remove("remove");
+      spearRecord.classList.remove("remove");
+      bowRecord.classList.remove("remove");
+      shieldRecord.classList.remove("remove");
     }
   // all-modal fadeOut
     function modalOut(){
@@ -97,14 +106,14 @@ var shieldImages = ['物静かな騎士　サチ'];
     }
   //属性別表示を解除
     function typeRemove(){
-      swordPic.classList.add("remove");
-      rapierPic.classList.add("remove");
-      clubPic.classList.add("remove");
-      daggerPic.classList.add("remove");
-      axePic.classList.add("remove");
-      spearPic.classList.add("remove");
-      bowPic.classList.add("remove");
-      shieldPic.classList.add("remove");
+      swordRecord.classList.add("remove");
+      rapierRecord.classList.add("remove");
+      clubRecord.classList.add("remove");
+      daggerRecord.classList.add("remove");
+      axeRecord.classList.add("remove");
+      spearRecord.classList.add("remove");
+      bowRecord.classList.add("remove");
+      shieldRecord.classList.add("remove");
     }
 
 
@@ -215,7 +224,7 @@ shield();
 
 // ボタンクリック
 swordBtn.onclick=function(){
-  swordPic.classList.toggle("remove");
+  swordRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   swordBtn.classList.toggle("btn-color");
@@ -223,7 +232,7 @@ swordBtn.onclick=function(){
 }
 
 rapierBtn.onclick=function(){
-  rapierPic.classList.toggle("remove");
+  rapierRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   rapierBtn.classList.toggle("btn-color");
@@ -231,7 +240,7 @@ rapierBtn.onclick=function(){
 }
 
 clubBtn.onclick=function(){
-  clubPic.classList.toggle("remove");
+  clubRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   clubBtn.classList.toggle("btn-color");
@@ -239,7 +248,7 @@ clubBtn.onclick=function(){
 }
 
 daggerBtn.onclick=function(){
-  daggerPic.classList.toggle("remove");
+  daggerRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   daggerBtn.classList.toggle("btn-color");
@@ -247,7 +256,7 @@ daggerBtn.onclick=function(){
 }
 
 axeBtn.onclick=function(){
-  axePic.classList.toggle("remove");
+  axeRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   axeBtn.classList.toggle("btn-color");
@@ -255,7 +264,7 @@ axeBtn.onclick=function(){
 }
 
 spearBtn.onclick=function(){
-  spearPic.classList.toggle("remove");
+  spearRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   spearBtn.classList.toggle("btn-color");
@@ -264,7 +273,7 @@ spearBtn.onclick=function(){
 }
 
 bowBtn.onclick=function(){
-  bowPic.classList.toggle("remove");
+  bowRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   bowBtn.classList.toggle("btn-color");
@@ -273,7 +282,7 @@ bowBtn.onclick=function(){
 }
 
 shieldBtn.onclick=function(){
-  shieldPic.classList.toggle("remove");
+  shieldRecord.classList.toggle("remove");
   timePic.classList.add("remove");
   allBtn.classList.remove("btn-color");
   shieldBtn.classList.toggle("btn-color");
