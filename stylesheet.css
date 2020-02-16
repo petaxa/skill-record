@@ -34,6 +34,12 @@ body{
   border-radius:50%;
 }
 
+.date{
+  color:gray;
+  opacity:0.8;
+  display:inline-block;
+}
+
 /* ********************************************************************************* */
 /* records */
 /* ********************************************************************************* */
@@ -52,17 +58,21 @@ body{
   background-image: url(images/cglist/title_bg3.png);
   background-size: cover;
 }
-.time-consolid{
+
+.consolid{
   float:left;
   margin-left:5px;
   width:114px;
   height:150px;
 }
-.time-consolid p{
+.consolid p{
   color:gray;
   font-size:1px;
   text-align:center;
   margin-top:0;
+}
+.consolid-weapon{
+  float:none;
 }
 
 /* ********************************************************************************* */

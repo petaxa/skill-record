@@ -139,7 +139,7 @@ function time(){
   let timeName =' ';
   for(let i=0;i<timeImages.length;i++){
     let timeImage = timeImages[i];
-    time += `<div class='time-consolid'><img src="images/skill/${timeImage}.png"/><p>${timeImage}</p></div>`;
+    time += `<div class='consolid'><img src="images/skill/${timeImage}.png"/><p>${timeImage}</p></div>`;
   }
   timePic.innerHTML=time;
 }
@@ -153,7 +153,7 @@ function sword(){
   let sword = ' ';
   for(let i=0;i<swordImages.length;i++){
     let swordImage = swordImages[i];
-    sword += `<img src="images/skill/${swordImage}.png"/>`;
+    sword += `<div class='consolid consolid-weapon'><img src="images/skill/${swordImage}.png"/><p>${swordImage}</p></div>`;
   }
   swordPic.innerHTML=sword;
 }
@@ -162,7 +162,7 @@ function rapier(){
   let rapier = ' ';
   for(let i=0;i<rapierImages.length;i++){
     let rapierImage = rapierImages[i];
-    rapier += `<img src="images/skill/${rapierImage}.png"/>`;
+    rapier += `<div class='consolid consolid-weapon'><img src="images/skill/${rapierImage}.png"/><p>${rapierImage}</p></div>`;
   }
   rapierPic.innerHTML=rapier;
 }
@@ -171,7 +171,7 @@ function club(){
   let club = ' ';
   for(let i=0;i<clubImages.length;i++){
     let clubImage = clubImages[i];
-    club += `<img src="images/skill/${clubImage}.png"/>`;
+    club += `<div class='consolid consolid-weapon'><img src="images/skill/${clubImage}.png"/><p>${clubImage}</p></div>`;
   }
   clubPic.innerHTML=club;
 }
@@ -179,7 +179,7 @@ function dagger(){
   let dagger = ' ';
   for(let i=0;i<daggerImages.length;i++){
     let daggerImage = daggerImages[i];
-    dagger += `<img src="images/skill/${daggerImage}.png"/>`;
+    dagger += `<div class='consolid consolid-weapon'><img src="images/skill/${daggerImage}.png"/><p>${daggerImage}</p></div>`;
   }
   daggerPic.innerHTML=dagger;
 }
@@ -187,7 +187,7 @@ function axe(){
   let axe = ' ';
   for(let i=0;i<axeImages.length;i++){
     let axeImage = axeImages[i];
-     axe+= `<img src="images/skill/${axeImage}.png"/>`;
+     axe+= `<div class='consolid consolid-weapon'><img src="images/skill/${axeImage}.png"/><p>${axeImage}</p></div>`;
   }
   axePic.innerHTML=axe;
 }
@@ -196,7 +196,7 @@ function spear(){
   let spear = ' ';
   for(let i=0;i<spearImages.length;i++){
     let spearImage = spearImages[i];
-    spear += `<img src="images/skill/${spearImage}"/>`;
+    spear += `<div class='consolid consolid-weapon'><img src="images/skill/${spearImage}"/><p>${spearImage}</p></div>`;
   }
   spearPic.innerHTML=spear;
 }
@@ -204,7 +204,7 @@ function bow(){
   let bow = ' ';
   for(let i=0;i<bowImages.length;i++){
     let bowImage = bowImages[i];
-    bow += `<img src="images/skill/${bowImage}"/>`;
+    bow += `<div class='consolid consolid-weapon'><img src="images/skill/${bowImage}"/><p>${bowImage}</p></div>`;
   }
   bowPic.innerHTML=bow;
 }
@@ -212,7 +212,7 @@ function shield(){
   let shield = ' ';
   for(let i=0;i<shieldImages.length;i++){
     let shieldImage = shieldImages[i];
-    shield += `<img src="images/skill/${shieldImage}"/>`;
+    shield += `<div class='consolid consolid-weapon'><img src="images/skill/${shieldImage}"/><p>${shieldImage}</p></div>`;
   }
   shieldPic.innerHTML=shield;
 }
