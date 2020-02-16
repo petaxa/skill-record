@@ -50,6 +50,9 @@ var shieldImages = ['物静かな騎士　サチ'];
     var bowPic = document.getElementById('bow-images');
     var shieldPic = document.getElementById('shield-images');
 
+  // skill-name ID
+    // var timeNameID = document.getElementById('time-name');
+
   // weapon-btn ID
     var swordBtn = document.getElementById('sword');
     var rapierBtn = document.getElementById('rapier');
@@ -133,9 +136,10 @@ timeLength();
   // 時系列順
 function time(){
   let time = ' ';
+  let timeName =' ';
   for(let i=0;i<timeImages.length;i++){
     let timeImage = timeImages[i];
-    time += `<img src="images/skill/${timeImage}.png"/>`;
+    time += `<div class='time-consolid'><img src="images/skill/${timeImage}.png"/><p>${timeImage}</p></div>`;
   }
   timePic.innerHTML=time;
 }
