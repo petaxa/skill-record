@@ -132,9 +132,9 @@ timeLength();
 // スキレコ全部を表示
   // 時系列順
 function time(){
-  var time = ' ';
+  let time = ' ';
   for(let i=0;i<timeImages.length;i++){
-    var timeImage = timeImages[i];
+    let timeImage = timeImages[i];
     time += `<img src="images/skill/${timeImage}.png"/>`;
   }
   timePic.innerHTML=time;
@@ -146,68 +146,68 @@ time();
 
 // 属性別表示
 function sword(){
-  var sword = ' ';
+  let sword = ' ';
   for(let i=0;i<swordImages.length;i++){
-    var swordImage = swordImages[i];
+    let swordImage = swordImages[i];
     sword += `<img src="images/skill/${swordImage}.png"/>`;
   }
   swordPic.innerHTML=sword;
 }
 
 function rapier(){
-  var rapier = ' ';
+  let rapier = ' ';
   for(let i=0;i<rapierImages.length;i++){
-    var rapierImage = rapierImages[i];
+    let rapierImage = rapierImages[i];
     rapier += `<img src="images/skill/${rapierImage}.png"/>`;
   }
   rapierPic.innerHTML=rapier;
 }
 
 function club(){
-  var club = ' ';
+  let club = ' ';
   for(let i=0;i<clubImages.length;i++){
-    var clubImage = clubImages[i];
+    let clubImage = clubImages[i];
     club += `<img src="images/skill/${clubImage}.png"/>`;
   }
   clubPic.innerHTML=club;
 }
 function dagger(){
-  var dagger = ' ';
+  let dagger = ' ';
   for(let i=0;i<daggerImages.length;i++){
-    var daggerImage = daggerImages[i];
+    let daggerImage = daggerImages[i];
     dagger += `<img src="images/skill/${daggerImage}.png"/>`;
   }
   daggerPic.innerHTML=dagger;
 }
 function axe(){
-  var axe = ' ';
+  let axe = ' ';
   for(let i=0;i<axeImages.length;i++){
-    var axeImage = axeImages[i];
+    let axeImage = axeImages[i];
      axe+= `<img src="images/skill/${axeImage}.png"/>`;
   }
   axePic.innerHTML=axe;
 }
 
 function spear(){
-  var spear = ' ';
+  let spear = ' ';
   for(let i=0;i<spearImages.length;i++){
-    var spearImage = spearImages[i];
+    let spearImage = spearImages[i];
     spear += `<img src="images/skill/${spearImage}"/>`;
   }
   spearPic.innerHTML=spear;
 }
 function bow(){
-  var bow = ' ';
+  let bow = ' ';
   for(let i=0;i<bowImages.length;i++){
-    var bowImage = bowImages[i];
+    let bowImage = bowImages[i];
     bow += `<img src="images/skill/${bowImage}"/>`;
   }
   bowPic.innerHTML=bow;
 }
 function shield(){
-  var shield = ' ';
+  let shield = ' ';
   for(let i=0;i<shieldImages.length;i++){
-    var shieldImage = shieldImages[i];
+    let shieldImage = shieldImages[i];
     shield += `<img src="images/skill/${shieldImage}"/>`;
   }
   shieldPic.innerHTML=shield;
@@ -312,7 +312,7 @@ allBtn.onclick=function(){
 timeBtn.onclick=function(){
   timePic.classList.toggle('remove');
   // allBtnの色制御
-  var timeHasRemove = $("#time-images").hasClass('remove');
+  let timeHasRemove = $("#time-images").hasClass('remove');
   if(timeHasRemove){
     document.getElementById("all").classList.remove("btn-color");
   }else{
