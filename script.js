@@ -139,7 +139,7 @@ function time(){
   let timeName =' ';
   for(let i=0;i<timeImages.length;i++){
     let timeImage = timeImages[i];
-    time += `<div class='consolid'><img src="images/skill/${timeImage}.png"/><p>${timeImage}</p></div>`;
+    time += `<div class='consolid'><img class='img${i}' src="images/skill/${timeImage}.png"/><p>${timeImage}</p></div>`;
   }
   timePic.innerHTML=time;
 }
@@ -346,3 +346,27 @@ document.getElementById("type").onclick=function(){
   //モーダルの非表示
   modalOut();
 }
+
+
+//date
+$(window).on('scroll',function(){
+  let date = $('.date');
+  let date1 = $('.date1');
+  let date2 = $('.date2');
+  date.each(function(){
+    var scrollPos = $(window).scrollTop();
+    var img0 = $('.img0').offset().top;
+    var img40 = $('.img40').offset().top;
+    var img60 = $('.img60').offset().top;
+    if(scrollPos < img0){
+      date1.addClass('remove');
+      date2.addClass('remove');
+    } else if(scrollPos>img0&&scrollPos<img40){
+      date1.removeClass('remove');
+      date2.addClass('remove');
+    } else if(scrollPos>img40&&scrollPos<img60){
+      date1.addClass('remove');
+      date2.removeClass('remove');
+    }
+  });
+});
