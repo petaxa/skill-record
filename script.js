@@ -354,15 +354,16 @@ $(window).on('scroll',function(){
   let date1 = $('.date1');
   let date2 = $('.date2');
   date.each(function(){
-    var scrollPos = $(window).scrollTop();
-    var img0 = $('.img0').offset().top;
-    var img40 = $('.img40').offset().top;
-    var img60 = $('.img60').offset().top;
-    if(scrollPos < img0){
+    let scrollPos = $(window).scrollTop();
+    let img0 = $('.img0').offset().top;
+    let img40 = $('.img40').offset().top;
+    let img60 = $('.img60').offset().top;
+    if(scrollPos < img0-180){
+      date.fadeOut();
       date1.addClass('remove');
       date2.addClass('remove');
-    } else if(scrollPos>img0&&scrollPos<img40){
-      date1.removeClass('remove');
+    } else if(scrollPos>img0-180&&scrollPos<img40){
+      date1.fadeIn(1500);
       date2.addClass('remove');
     } else if(scrollPos>img40&&scrollPos<img60){
       date1.addClass('remove');
@@ -370,3 +371,6 @@ $(window).on('scroll',function(){
     }
   });
 });
+
+
+//kurukuru
