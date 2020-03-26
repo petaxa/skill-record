@@ -6,10 +6,10 @@ body{
 /* title */
 /* ********************************************************************************* */
 .main-title{
-  background-image:url(images/cglist/title_bg1.png);
+  background-image:url(images/cglist/main-title.png);
   background-size:cover;
   text-align:center;
-  height:100vh;
+  height:930px;
 }
 
 .main-title img{
@@ -103,7 +103,7 @@ body{
 /* ********************************************************************************* */
 
 .isAnimation{
-  aniamtion:recordsAnimation 2s ease forwards;
+  animation:recordsAnimation 2s ease forwards;
 }
 
 @keyframes recordsAnimation{

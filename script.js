@@ -233,6 +233,8 @@ swordBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   swordBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 rapierBtn.onclick=function(){
@@ -241,6 +243,8 @@ rapierBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   rapierBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 clubBtn.onclick=function(){
@@ -249,6 +253,8 @@ clubBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   clubBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 daggerBtn.onclick=function(){
@@ -257,6 +263,8 @@ daggerBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   daggerBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 axeBtn.onclick=function(){
@@ -265,6 +273,8 @@ axeBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   axeBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 spearBtn.onclick=function(){
@@ -274,6 +284,8 @@ spearBtn.onclick=function(){
   spearBtn.classList.toggle("btn-color");
   allModal.classList.add("remove");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 bowBtn.onclick=function(){
@@ -283,6 +295,8 @@ bowBtn.onclick=function(){
   bowBtn.classList.toggle("btn-color");
   allModal.classList.add("remove");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 shieldBtn.onclick=function(){
@@ -291,6 +305,8 @@ shieldBtn.onclick=function(){
   allBtn.classList.remove("btn-color");
   shieldBtn.classList.toggle("btn-color");
   modalOut();
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 
@@ -345,6 +361,9 @@ document.getElementById("type").onclick=function(){
 
   //モーダルの非表示
   modalOut();
+
+  //dateの非表示
+  $('.date').fadeOut();
 }
 
 
@@ -353,21 +372,224 @@ $(window).on('scroll',function(){
   let date = $('.date');
   let date1 = $('.date1');
   let date2 = $('.date2');
+  let date3 = $('.date3');
+  let date4 = $('.date4');
+  let date5 = $('.date5');
+  let date6 = $('.date6');
+  let date7 = $('.date7');
+  let date8 = $('.date8');
+  let date9 = $('.date9');
+  let date10 = $('.date10');
+  let date11 = $('.date11');
+  let date12 = $('.date12');
+  let date13 = $('.date13');
+  let date14 = $('.date14');
+  let date15 = $('.date15');
+  let date16 = $('.date16');
+  let date17 = $('.date17');
+  let date18 = $('.date18');
+  let date19 = $('.date19');
+  let date20 = $('.date20');
+  let date21 = $('.date21');
+  let date22 = $('.date22');
+  let date23 = $('.date23');
+  let date24 = $('.date24');
+  let date25 = $('.date25');
+  let date26 = $('.date26');
+  // let date27 = $('.date27');
+
+  
+
   date.each(function(){
+    // アンカーの指定
     let scrollPos = $(window).scrollTop();
     let img0 = $('.img0').offset().top;
-    let img40 = $('.img40').offset().top;
-    let img60 = $('.img60').offset().top;
+    let anchor1 = $('.img10').offset().top;//2017,12
+    let anchor2 = $('.img16').offset().top;//2018,1
+    let anchor3 = $('.img26').offset().top;//,2
+    let anchor4 = $('.img34').offset().top;//,3
+    let anchor5 = $('.img42').offset().top;//,4
+    let anchor6 = $('.img57').offset().top;//,5
+    let anchor7 = $('.img68').offset().top;//,6
+    let anchor8 = $('.img79').offset().top;//,7
+    let anchor9 = $('.img97').offset().top;//,8
+    let anchor10 = $('.img102').offset().top;//,9
+    let anchor11 = $('.img118').offset().top;//,10
+    let anchor12 = $('.img136').offset().top;//,11
+    let anchor13 = $('.img153').offset().top;//,12
+    let anchor14 = $('.img159').offset().top;//2019,1
+    let anchor15 = $('.img174').offset().top;//,2
+    let anchor16 = $('.img190').offset().top;//,3
+    let anchor17 = $('.img205').offset().top;//,4
+    let anchor18 = $('.img219').offset().top;//,5
+    let anchor19 = $('.img229').offset().top;//,6
+    let anchor20 = $('.img243').offset().top;//,7
+    let anchor21 = $('.img257').offset().top;//,8
+    let anchor22 = $('.img271').offset().top;//,9
+    let anchor23 = $('.img287').offset().top;//,10
+    let anchor24 = $('.img303').offset().top;//,11
+    let anchor25 = $('.img327').offset().top;//,12
+    let anchor26 = $('.img335').offset().top;//2020,1
+
+
     if(scrollPos < img0-180){
-      date.fadeOut();
+      date1.fadeOut();
       date1.addClass('remove');
       date2.addClass('remove');
-    } else if(scrollPos>img0-180&&scrollPos<img40){
+      date3.addClass('remove');
+    } else if(scrollPos>img0-180&&scrollPos<anchor1){
       date1.fadeIn(1500);
       date2.addClass('remove');
-    } else if(scrollPos>img40&&scrollPos<img60){
+      date3.addClass('remove');
+      date4.addClass('remove');
+    } else if(scrollPos>anchor1&&scrollPos<anchor2){
       date1.addClass('remove');
       date2.removeClass('remove');
+      date3.addClass('remove');
+      date4.addClass('remove');
+      date5.addClass('remove');
+    }else if(scrollPos>anchor2&&scrollPos<anchor3){
+      date2.addClass('remove');
+      date3.removeClass('remove');
+      date4.addClass('remove');
+      date5.addClass('remove');
+      date6.addClass('remove');
+    }else if(scrollPos>anchor3&&scrollPos<anchor4){
+      date3.addClass('remove');
+      date4.removeClass('remove');
+      date5.addClass('remove');
+      date6.addClass('remove');
+      date7.addClass('remove');
+    }else if(scrollPos>anchor4&&scrollPos<anchor5){
+      date4.addClass('remove');
+      date5.removeClass('remove');
+      date6.addClass('remove');
+      date7.addClass('remove');
+      date8.addClass('remove');
+    }else if(scrollPos>anchor5&&scrollPos<anchor6){
+      date5.addClass('remove');
+      date6.removeClass('remove');
+      date7.addClass('remove');
+      date8.addClass('remove');
+      date9.addClass('remove');
+    }else if(scrollPos>anchor6&&scrollPos<anchor7){
+      date6.addClass('remove');
+      date7.removeClass('remove');
+      date8.addClass('remove');
+      date9.addClass('remove');
+      date10.addClass('remove');
+    }else if(scrollPos>anchor7&&scrollPos<anchor8){
+      date7.addClass('remove');
+      date8.removeClass('remove');
+      date9.addClass('remove');
+      date10.addClass('remove');
+      date11.addClass('remove');
+    }else if(scrollPos>anchor8&&scrollPos<anchor9){
+      date8.addClass('remove');
+      date9.removeClass('remove');
+      date10.addClass('remove');
+      date11.addClass('remove');
+      date12.addClass('remove');
+    }else if(scrollPos>anchor9&&scrollPos<anchor10){
+      date9.addClass('remove');
+      date10.removeClass('remove');
+      date11.addClass('remove');
+      date12.addClass('remove');
+      date13.addClass('remove');
+    }else if(scrollPos>anchor10&&scrollPos<anchor11){
+      date10.addClass('remove');
+      date11.removeClass('remove');
+      date12.addClass('remove');
+      date13.addClass('remove');
+      date14.addClass('remove');
+    }else if(scrollPos>anchor11&&scrollPos<anchor12){
+      date11.addClass('remove');
+      date12.removeClass('remove');
+      date13.addClass('remove');
+      date14.addClass('remove');
+      date15.addClass('remove');
+    }else if(scrollPos>anchor12&&scrollPos<anchor13){
+      date12.addClass('remove');
+      date13.removeClass('remove');
+      date14.addClass('remove');
+      date15.addClass('remove');
+      date16.addClass('remove');
+    }else if(scrollPos>anchor13&&scrollPos<anchor14){
+      date13.addClass('remove');
+      date14.removeClass('remove');
+      date15.addClass('remove');
+      date16.addClass('remove');
+      date17.addClass('remove');
+    }else if(scrollPos>anchor14&&scrollPos<anchor15){
+      date14.addClass('remove');
+      date15.removeClass('remove');
+      date16.addClass('remove');
+      date17.addClass('remove');
+      date18.addClass('remove');
+    }else if(scrollPos>anchor15&&scrollPos<anchor16){
+      date15.addClass('remove');
+      date16.removeClass('remove');
+      date17.addClass('remove');
+      date18.addClass('remove');
+      date19.addClass('remove');
+    }else if(scrollPos>anchor16&&scrollPos<anchor17){
+      date16.addClass('remove');
+      date17.removeClass('remove');
+      date18.addClass('remove');
+      date19.addClass('remove');
+      date20.addClass('remove');
+    }else if(scrollPos>anchor17&&scrollPos<anchor18){
+      date17.addClass('remove');
+      date18.removeClass('remove');
+      date19.addClass('remove');
+      date20.addClass('remove');
+      date21.addClass('remove');
+    }else if(scrollPos>anchor18&&scrollPos<anchor19){
+      date18.addClass('remove');
+      date19.removeClass('remove');
+      date20.addClass('remove');
+      date21.addClass('remove');
+      date22.addClass('remove');
+    }else if(scrollPos>anchor19&&scrollPos<anchor20){
+      date19.addClass('remove');
+      date20.removeClass('remove');
+      date21.addClass('remove');
+      date22.addClass('remove');
+      date23.addClass('remove');
+    }else if(scrollPos>anchor20&&scrollPos<anchor21){
+      date20.addClass('remove');
+      date21.removeClass('remove');
+      date22.addClass('remove');
+      date23.addClass('remove');
+      date24.addClass('remove');
+    }else if(scrollPos>anchor21&&scrollPos<anchor22){
+      date21.addClass('remove');
+      date22.removeClass('remove');
+      date23.addClass('remove');
+      date24.addClass('remove');
+      date25.addClass('remove');
+    }else if(scrollPos>anchor22&&scrollPos<anchor23){
+      date22.addClass('remove');
+      date23.removeClass('remove');
+      date24.addClass('remove');
+      date25.addClass('remove');
+      date26.addClass('remove');
+    }else if(scrollPos>anchor23&&scrollPos<anchor24){
+      date23.addClass('remove');
+      date24.removeClass('remove');
+      date25.addClass('remove');
+      date26.addClass('remove');
+      date27.addClass('remove');
+    }else if(scrollPos>anchor24&&scrollPos<anchor25){
+      date24.addClass('remove');
+      date25.removeClass('remove');
+      date26.addClass('remove');
+      date27.addClass('remove');
+      date28.addClass('remove');
+    }else if(scrollPos>anchor25&&scrollPos<anchor26){
+      date25.addClass('remove');
+      date26.removeClass('remove');
+      // date27.addClass('remove');
     }
   });
 });
