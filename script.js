@@ -328,7 +328,7 @@ allBtn.onclick=function(){
 
 
 timeBtn.onclick=function(){
-  timePic.classList.toggle('remove');
+  timePic.classList.remove('remove');
   // allBtnの色制御
   let timeHasRemove = $("#time-images").hasClass('remove');
   if(timeHasRemove){
