@@ -63,7 +63,6 @@ body{
 /* ********************************************************************************* */
 .records{
   text-align:center;
-  height:200px;
 }
 .record-list{
   padding-top:20px;
@@ -78,6 +77,10 @@ body{
   margin-top:5px;
   background-image: url(images/cglist/title_bg3.png);
   background-size: cover;
+}
+
+.records h1{
+  font-family: impact;
 }
 
 .consolid{
