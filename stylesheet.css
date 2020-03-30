@@ -92,8 +92,15 @@ body{
   -webkit-text-stroke-width: 0.5px;
 }
 
+#time-images,#sword-images,#rapier-images,#club-images,#dagger-images,#axe-images,#spear-images,#bow-images,#shield-images{
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+
 .consolid{
-  float:left;
   margin-left:5px;
   width:114px;
   height:150px;
