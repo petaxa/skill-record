@@ -2,6 +2,7 @@ body{
   margin:0;
   background-color: white;
 }
+
 /* ********************************************************************************* */
 /* title */
 /* ********************************************************************************* */
@@ -94,8 +95,9 @@ body{
   text-align:center;
   margin-top:0;
 }
-.consolid-weapon{
-  float:none;
+
+.sword-box,.rapier-box,.club-box,.dagger-box,.axe-box,.spear-box,.bow-box,.shield-box{
+  display:inline-block;
 }
 
 /* ********************************************************************************* */
@@ -162,9 +164,6 @@ body{
 
   .btn-color{
     border:solid 2px red;
-  }
-  .remove{
-    display:none;
   }
 
   @keyframes rotation {
@@ -322,5 +321,6 @@ body{
   cursor:pointer;
 }
 
-
-/* details */
+.remove{
+  display:none;
+}
